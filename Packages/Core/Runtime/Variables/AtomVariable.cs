@@ -350,7 +350,8 @@ namespace UnityAtoms
                 return ChangedWithHistory as E;
             }
 
-            throw new NotSupportedException($"Event type {typeof(E)} not supported! Use {typeof(E1)} or {typeof(E2)}.");
+            return Changed as E;
+            //throw new NotSupportedException($"Event type {typeof(E)} not supported! Use {typeof(E1)} or {typeof(E2)}.");
         }
 
         /// <summary>
