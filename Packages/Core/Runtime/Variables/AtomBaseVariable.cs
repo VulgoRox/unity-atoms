@@ -53,7 +53,7 @@ namespace UnityAtoms
         /// The Variable value as a property.
         /// </summary>
         /// <returns>Get or set the Variable value.</returns>
-        public virtual T Value { get { return _value; } set { throw new NotImplementedException(); } }
+        public virtual T Value { get { return _value; } set { _value = value; } }
 
         [SerializeField]
         protected T _value = default(T);
